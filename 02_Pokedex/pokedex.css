@@ -1,0 +1,243 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Arame;
+}
+
+.grid1 {
+  display: grid;
+  grid-template-columns: 3fr 35fr 10fr 20fr 8fr 20fr 5fr 18fr 3fr;
+  grid-template-rows: 25px 25px 150px 25px 45px 200px 130px 70px 75px
+}
+
+.poke-title {
+  font-size: 16px;
+  }
+
+.home-right-color {
+  grid-column: 6 / 10;
+  grid-row:  1 / 10;
+  background-color: #F8F6F5;
+}
+
+.home-left-color {
+  grid-column: 1 / 6;
+  grid-row:  1 / 10;
+  background-color: #ABABA0;
+}
+
+.home-profile {
+  background-color: #F9F4D5;
+  width: 600px;
+  height: 270px;
+  grid-column: 4 / 7;
+  grid-row: 3 / 6;
+  position: relative;
+  top: 40px;
+  font-size: 45px;
+  letter-spacing: 2px;
+  text-align: center;
+  padding: 40px;
+}
+
+.img-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+  top: 40px
+}
+
+.title-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.poke-title {
+  font-size: 16px;
+  padding: 10px;
+  }
+
+.hover:hover {
+  border-radius: 120px;
+  box-shadow: 0px 3px 15px rgba(0,0,0,.5)
+}
+
+.profile-img {
+  background-size: cover;
+  grid-column: 1 / 4;
+  grid-row: 4 / 10;
+  z-index: 1;
+}
+
+.sub-img {
+  background-size: cover;
+  grid-column: 7 / 9;
+  grid-row: 7 / 10;
+  z-index: 1;
+}
+
+.left-color {
+  grid-column: 1 / 6;
+  grid-row:  1 / 10;
+}
+.right-color {
+  grid-column: 6 / 10;
+  grid-row:  1 / 10;
+}
+.menu  {
+  grid-column: 3 / 4;
+  grid-row: 2 / 2;
+  z-index: 1;
+  display: inline;
+}
+.menu-text {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+a {
+    display: inline-block;
+    vertical-align: middle;
+    text-decoration: none;
+    color: black;
+}
+
+.ham-menu {
+    width: 25px;
+    height: 2px;
+    border: 1.5px solid black;
+    margin: 1px 0;
+    border-radius: 50px;
+}
+.home  {
+  grid-column: 2 / 2;
+  grid-row: 2 / 2;
+  z-index: 1;
+ font-size: 25px;
+ color: #000000;
+ letter-spacing: 2px;
+}
+
+.level {
+  grid-column: 8 / 10;
+  grid-row: 3 / 6;
+  z-index: 1;
+  transform: rotate(90deg);
+  font-size: 40px;
+  color: #000000;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.level-icon {
+transform: rotate(90deg);
+vertical-align: middle;
+}
+
+.stats {
+width: 270px;
+z-index: 1;
+grid-column: 5 / 7 ;
+grid-row: 6 / 8;
+}
+
+.stat-text {
+  font-size: 24px;
+  letter-spacing: 2px;
+  position: relative;
+  left: 20px;
+}
+
+.stat-details {
+  font-size: 18px;
+  letter-spacing: 1px;
+  position: relative;
+  left: 20px;
+}
+
+.data {
+  color: #6A6868
+}
+
+.your-pokedex {
+  grid-column: 3 / 7;
+  grid-row: 9 / 10;
+  z-index: 2;
+  font-size: 40px;
+color: #000000;
+letter-spacing: 2px;
+}
+
+.poke-name {
+  grid-column: 3 / 5;
+  grid-row: 5 / 6;
+  z-index: 2;
+  font-size: 55px;
+  color: #000000;
+  letter-spacing: 2px;
+}
+
+#symbol {
+  position: relative;
+  top: 30px;
+  left: 220px;
+}
+
+.charmander .profile-img {
+  background: url('images/charmander-red.jpg');
+}
+
+.charmander .stats {
+background: #EED97E;
+}
+
+.charmander .sub-img{
+  background: url('images/charizard.png');
+}
+.charmander .left-color {
+  background: #FF5500;
+}
+.charmander .right-color {
+  background: #FE7100;
+
+}
+
+/* MEOWTH PAGE  */
+.meowth .left-color {
+  background: #DF9277;
+}
+
+.meowth .right-color {
+  background: #FFE5B4;
+
+}
+.meowth .profile-img {
+  background: url('images/meowth-tan.png');
+
+}
+.meowth .sub-img{
+  background: url('images/persian-tan.png');
+}
+.meowth .stats {
+background: #FDF5BA;
+
+}
+
+/* SQUIRTTLE PAGE  */
+.squirtle .left-color {
+  background: #90A7C7;
+}
+.squirtle .right-color {
+  background: #C7E2E2;
+}
+.squirtle .profile-img {
+  background: url('images/squirt.png');
+}
+.squirtle .sub-img {
+  background: url('images/wartortle.png');
+}
+.squirtle .stats {
+background: #FCEFC8;
+}
