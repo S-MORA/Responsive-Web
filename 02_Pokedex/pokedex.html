@@ -4,48 +4,34 @@
     <meta charset="utf-8">
     <title></title>
     <link rel="stylesheet" href="pokedex.css">
-
-
   </head>
-  <body class="">
-    <section class="grid1">
-      <div class="menu">
-       <a href="">
-        <div class="ham-menu"></div>
-        <div class="ham-menu"></div>
-        <div class="ham-menu"></div>
-      </a>
-        <div class="menu-text">menu</div>
-    </div>
-        <div class="home"><a href="pokedex-home.html">home</a></div>
-        <div class="your-pokedex">your pokedex</div>
-        <div class="level">level 15 <img class="level-icon" src="images/level-icon.png"></div>
-
-  <!-- VARIABLES   -->
-       <div class="poke-name"></div>
-       <div class="profile-img"></div>
-
-        <div class="sub-img"></div>
-
-        <div class="stats">
-          <p class="stat-text">Stats: </p>
-
-          <p class="stat-details">Pokemon HP:  <span id="hp" class="data"></span> </p>
-          <p class="stat-details">Attack HP:  <span id="attack" class="data"></span></p>
-          <p class="stat-details">Defense HP:  <span id="defense" class="data"></span></p>
-          <p class="stat-details">
-            Abilities: <br><br>
-          <span id="ability1" class="data"></span> <br><br>
-          <span id="ability2" class="data"></span>
-          </p>
-
-          <img id="symbol" src="">
-        </div>
-        <div class="left-color"></div>
-        <div class="right-color"></div>
-
-  </section>
-  </body>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="pokedex.js" type="text/javascript"></script>
+<body>
+  <section class="grid1">
+    <div class="home"><a href="pokedex-home.html">home</a></div>
+    <div class="log-out"><a href="">log out</a></div>
+    <div class="your-pokedex">your pokedex</div>
+    <div class="level">level 15 <img class="level-icon" src="images/level-icon.png"></div>
+    <div class="left-color"></div>
+    <div class="right-color"></div>
+<!-- VARIABLES   -->
+    <div class="poke-name"></div>
+    <div class="profile-img"></div>
+    <div class="sub-img"><p id="sub-img-text">Evolves into:</p></div>
+<!-- stat box  -->
+    <div class="stats">
+      <p class="stat-text">Stats: </p>
+      <p class="stat-details">Pokemon HP:  <span id="hp" class="data"></span></p>
+      <p class="stat-details">Attack HP:  <span id="attack" class="data"></span></p>
+      <p class="stat-details">Defense HP:  <span id="defense" class="data"></span></p>
+      <p class="stat-details">Abilities: <br><br>
+        <span id="ability1" class="data"></span> <br><br>
+        <span id="ability2" class="data"></span>
+     </p>
+      <img id="symbol" src="">
+   </div>
+<!-- background colors  -->
+ </section>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="pokedex.js" type="text/javascript"></script>
 </html>
