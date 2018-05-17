@@ -1,0 +1,132 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.sidenav {
+  height: 65%;
+  width: 29%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background: #574A68;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sm-box a:hover {
+  color: #574A68;
+}
+
+.sub-sidenav {
+  height: 35%;
+  background: rgb(87, 74, 104, .75);
+  top: 65%;
+}
+
+.nav-font a {
+  font-family: Comfortaa-Bold;
+  letter-spacing: 1.07px;
+  padding: 14px 6px;
+  font-size: 16px;
+  color: #818181;
+  display: inline;
+}
+
+a {
+  text-decoration: none;
+}
+
+.sub-nav-font a {
+  font-family: Comfortaa-Bold;
+  font-size: 36px;
+  letter-spacing: 2.57px;
+  padding: 0;
+  color: #E4B0AF;
+  display: block;
+}
+
+.sub-nav-font:first-child {
+  margin-top: 15px;
+}
+
+.md-box {
+  width: 340px;
+  height: 32%;
+  border-radius: 10px;
+  background: #574A68;
+  padding: 15px;
+  margin: 0 auto;
+  margin-top: 15px;
+}
+
+.arrow-right {
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-left: 10px solid #E4B0AF;
+}
+
+.sm-box {
+  height: 20%;
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sm-font {
+  font-family: Comfortaa-Bold;
+  font-size: 15px;
+  color: #E4B0AF;
+  letter-spacing: 2.57px;
+  margin-left: 10px;
+  display: flex;
+}
+
+.md-font {
+  font-family: Comfortaa-Regular;
+  font-size: 22px;
+  color: #E4B0AF;
+  letter-spacing: 1px;
+  margin: 5px;
+}
+
+.icon-color a:hover {
+  color: black;
+}
+
+/* Background sidebar */
+
+.main {
+  margin-left: 29%;
+}
+
+.landing-bg {
+  background-image: url("images/cupcake-bg.png");
+  background-size: cover;
+  background-repeat: none;
+  height: 1024px;
+}
+
+.header-img {
+  width: 100%;
+  height: 80%;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
