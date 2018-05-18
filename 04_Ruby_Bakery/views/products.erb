@@ -1,0 +1,77 @@
+<div class="header-container">
+  <img class="header-img" src="<%=@view_manager.header%>">
+</div>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-lg-12">
+      <h2 class="product-type"><%=@view_manager.type%></h2>
+      <p class="product-type product-md-font">Made with organic lorem ipsum buttercream</p>
+    </div>
+  </div>
+  <div class="row mb-3">
+    <% @view_manager.array.each do |cupcake| %>
+      <div class="col-lg-4 ">
+        <div>
+          <img class="width rounded" src="<%=cupcake.img%>" alt="">
+          <div class="product-type product-sm-font"><%=cupcake.name%>
+            <img class="float-right" src="/images/shopping-cart.png" alt="">
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
+
+<!--
+    <div class="col-lg-4 ">
+      <div>
+        <img class="width rounded" src="/images/cupcake-1.png" alt="">
+        <div class="product-type product-sm-font">Vanilla Lavender
+          <img class="float-right" src="/images/shopping-cart.png" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 ">
+      <div>
+        <img class="width rounded" src="/images/cupcake-2.png" alt="">
+        <div class="product-type product-sm-font">Vanilla Lavender
+          <img class="float-right" src="/images/shopping-cart.png" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 ">
+      <div>
+        <img class="width rounded" src="/images/cupcake-3.png" alt="">
+        <div class="product-type product-sm-font">Vanilla Lavender
+          <img class="float-right" src="/images/shopping-cart.png" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+    <div class="row mb-3">
+      <div class="col-lg-4 ">
+        <div>
+          <img class="width rounded" src="/images/cupcake-4.png" alt="">
+          <div class="product-type product-sm-font">Vanilla Lavender
+            <img class="float-right" src="/images/shopping-cart.png" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 ">
+        <div>
+          <img class="width rounded" src="/images/cupcake-5.png" alt="">
+          <div class="product-type product-sm-font">Vanilla Lavender
+            <img class="ml-5" src="/images/shopping-cart.png" alt="">
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 ">
+        <div>
+          <img class="width rounded" src="/images/cupcake-6.png" alt="">
+          <div class="product-type product-sm-font">Vanilla Lavender
+            <img class="ml-5" src="/images/shopping-cart.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div> -->
