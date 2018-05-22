@@ -1,1 +1,20 @@
-<div class="landing-bg"></div>
+<div class="landing-bg">
+  <div class="landing-text">
+    Life is sweet.
+    <br>
+    Order online 24/7!
+  </div>
+  <div class="lg-box">
+    <div class="mailing-text">
+      get special deals from out our mailing list
+      <div class="success-font text-center"><%= styled_flash %>
+      </div>
+      <form class="" action="/mail-list" method="POST">
+        <div class="text-center">
+          <input type="email" name="email" value="Email..">
+          <input type="submit" class="m-3 btn btn-dark" value="submit">
+        </div>
+      </form>
+
+    </div>
+  </div>

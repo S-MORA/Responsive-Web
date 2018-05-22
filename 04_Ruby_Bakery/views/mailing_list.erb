@@ -1,0 +1,10 @@
+<h3>Welcome to the Friday Bakery </h3>
+<h6>Here is a list of our products</h6>
+
+<% @products.cakes.each do |item| %>
+    <div class="col-lg-4 col-sm-6">
+      <div>
+        <img class="width rounded" src="<%=item.img%>" alt="">
+        <div class="product-type product-sm-font m-2 mb-3"><%=item.img%></div>
+    </div>
+<% end %>

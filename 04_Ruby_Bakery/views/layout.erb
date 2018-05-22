@@ -14,40 +14,44 @@
 
   <body>
     <div class="sidenav">
+
       <a href="/"><img src="images/logo.png" alt="logo"></a>
-      <div class="nav-font">
-        <a href="#about">about us</a>
-        <a href="#services">catering</a>
-        <a href="#clients">gallery</a>
-        <a href="#contact">recipes</a>
+      <div class="nav-font ml-1">
+        <a href="/aboutus">about us</a>
+        <a href="/catering">catering</a>
+        <a href="/gallery">gallery</a>
       </div>
-      <div class="sub-nav-font">
+
+      <div class="sub-nav-font ml-1">
         <a href="/cupcakes">CUPCAKES</a>
         <a href="/cookies">COOKIES</a>
-        <a href="/cakes">CAKE</a>
-        <a href="#">MORE</a>
+        <a href="/cakes">CAKES</a>
       </div>
     </div>
+
     <div class="sidenav sub-sidenav">
-      <div class="md-box">
+      <a href='/find-a-bakery'>
+        <div class="md-box">
         <span class="sm-font">Find a Bakery</span>
-        <span class="md-font">STORE OPENING TIMES
-        </span>
+        <span class="md-font mt-1">CONTACT  US  HERE</span>
+      </a>
         <div class="arrow-right"></div>
       </div>
       <div class="md-box sm-box">
-        <span class="sm-font">Join Our Mailing List</span>
+        <span class="sm-font">$20 minimum on all orders</span>
       </div>
       <div class="md-box sm-box flex-between">
-        <a href="" class="uk-icon-button" uk-icon="yelp"></a>
-        <a href="" class="uk-icon-button" uk-icon="twitter"></a>
-        <a href="" class="uk-icon-button" uk-icon="facebook"></a>
-        <a href="" class="uk-icon-button" uk-icon="instagram"></a>
+        <a href="http://www.yelp.com" class="uk-icon-button" uk-icon="yelp"></a>
+        <a href="http://www.twitter.com" class="uk-icon-button" uk-icon="twitter"></a>
+        <a href="http://www.facebook.com" class="uk-icon-button" uk-icon="facebook"></a>
+        <a href="http://www.instagram.com" class="uk-icon-button" uk-icon="instagram"></a>
       </div>
     </div>
     <div class="main">
       <%= yield %>
     </div>
+
+
 
   </body>
 

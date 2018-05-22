@@ -1,6 +1,12 @@
 body {
   padding: 0;
   margin: 0;
+  text-shadow: 0px 2px 8px rgba(0, 0, 0, 0.3);
+  background-color: #F0F0F0
+}
+
+.mailing-text {
+  color: white;
 }
 
 .sidenav {
@@ -12,7 +18,7 @@ body {
   left: 0;
   background: #574A68;
   overflow-x: hidden;
-  padding-top: 10px;
+  padding-top: 8px;
 }
 
 .sub-sidenav {
@@ -33,23 +39,21 @@ body {
   font-family: Comfortaa-Bold;
   letter-spacing: 1.07px;
   padding: 14px 6px;
-  font-size: 16px;
-  color: #818181;
+  font-size: 1.1vw;
+  color: white;
   display: inline;
 }
 
 .sub-nav-font a {
   font-family: Comfortaa-Bold;
-  font-size: 36px;
+  font-size: 3vw;
   letter-spacing: 2.57px;
-  padding: 0;
   color: #E4B0AF;
   display: block;
-  text-decoration: none;
 }
 
 .md-box {
-  width: 340px;
+  width: 25vw;
   height: 32%;
   border-radius: 10px;
   background: #574A68;
@@ -59,12 +63,12 @@ body {
 }
 
 .arrow-right {
-  border-top: 15px solid transparent;
-  border-bottom: 15px solid transparent;
-  border-left: 8px solid #E4B0AF;
+  border-top: 1vh solid transparent;
+  border-bottom: 1vh solid transparent;
+  border-left: .5vw solid #E4B0AF;
   position: relative;
-  left: 99%;
-  bottom: 65%;
+  left: 22vw;
+  bottom: 2vh;
 }
 
 .sm-box {
@@ -79,17 +83,22 @@ body {
 
 .sm-font {
   font-family: Comfortaa-Bold;
-  font-size: 15px;
-  color: #E4B0AF;
+  font-size: 1vw;
+  color: white;
   letter-spacing: 2.57px;
   margin-left: 10px;
   display: flex;
 }
 
+.success-font {
+  font-family: Comfortaa-Regular;
+  font-size: 1vw;
+}
+
 .md-font {
   font-family: Comfortaa-Regular;
-  font-size: 22px;
-  color: #E4B0AF;
+  font-size: 1.2vw;
+  color: white;
   letter-spacing: 1px;
   margin: 5px;
 }
@@ -98,18 +107,35 @@ body {
   color: black;
 }
 
+/* landing email  sign up  */
+
+.lg-box {
+  width: 38vw;
+  height: 18vh;
+  background-color: rgb(0, 0, 0, .6);
+  border-radius: 38px;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 AUTO;
+  margin-top: 18VH;
+  font-family: Comfortaa-bold;
+  font-size: 1.5vw;
+}
+
 /* Background sidebar */
 
 .main {
   margin-left: 29%;
-  background-color: #FFFAF0
 }
 
 .landing-bg {
   background-image: url("images/cupcake-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
-  background-repeat: none;
-  height: 1024px;
+  height: 100vh;
 }
 
 .header-img {
@@ -129,29 +155,120 @@ body {
   width: 100%;
 }
 
+a {
+  text-decoration: none !important;
+}
+
+.landing-text {
+  font-family: Comfortaa-Bold;
+  font-size: 2.5vw;
+  color: #E4B0AF;
+  letter-spacing: 2.57px;
+  position: relative;
+  left: 60%;
+  top: 10%;
+}
+
 /* product page */
 
 .product-type {
   font-family: Comfortaa-Regular;
-  font-size: 48px;
-  color: #610524;
+  font-size: 3.7vw;
+  color: black;
   letter-spacing: 1px;
 }
 
 .product-md-font {
-  font-size: 24px;
+  font-size: 1.8vw;
 }
 
 .product-sm-font {
-  font-size: 16px;
+  font-size: 1vw;
   margin: 0;
 }
 
-@media screen and (max-height: 450px) {
+.open-sans {
+  font-family: OpenSans;
+  font-size: 4vw;
+}
+
+.open-sans-md {
+  font-family: OpenSans;
+  font-size: 3vw;
+}
+
+/* contact us  */
+
+.flex-container {
+  display: flex;
+  align-items: center;
+}
+
+.user-input {
+  background: #FFFFFF;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  margin: 10px 0;
+  padding: 6px;
+}
+
+@media screen and (max-width: 740px) {
   .sidenav {
     padding-top: 15px;
+    height: 20vh;
+    width: 100%;
   }
   .sidenav a {
-    font-size: 18px;
+    font-size: 3vw;
   }
-}
+  .sub-sidenav {
+    display: none
+  }
+  img {
+    height: 15vh !important;
+  }
+  .nav-font {
+    display: inline;
+  }
+  .sub-nav-font {
+    position: relative;
+    bottom: 5vh;
+    left: 38vw;
+  }
+  .sub-nav-font a {
+    display: inline;
+    margin-left: 0 !important;
+  }
+  .main {
+    width: 100%;
+    margin-top: 20vh;
+    margin-left: 0px;
+  }
+  .lg-box {
+    width: 60vw;
+  }
+  .landing-text {
+    top: 15%;
+  }
+  .mailing-text {
+    font-size: 2.2vw;
+  }
+  .btn {
+    font-size: 2vw !important;
+  }
+  /* product page */
+  .header-container {
+    display: none
+  }
+  .img-resize {
+    height: 1.2vh !important;
+  }
+  .col-lg-4 {
+    display: inline !important;
+  }
+  .col-sm-6 {
+    width: 50% !important;
+  }
+  .product-sm-font {
+    font-size: 2vw;
+  }
