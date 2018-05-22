@@ -1,11 +1,11 @@
 require 'sinatra'
+require 'mailgun'
+require 'sinatra/flash'
+require './ProductManager'
 require './View_manager'
 require './cupcake_class'
 require './cake_class'
 require './cookie_class'
-require 'mailgun'
-require 'sinatra/flash'
-require './ProductManager'
 
 enable :sessions
 

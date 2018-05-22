@@ -1,10 +1,27 @@
-<h3>Welcome to the Friday Bakery </h3>
-<h6>Here is a list of our products</h6>
+<h1>Welcome to the Friday Bakery </h1>
+<h2>Here is a list of our products</h2>
 
+<h3>Cakes</h3>
 <% @products.cakes.each do |item| %>
-    <div class="col-lg-4 col-sm-6">
+    <div>
       <div>
-        <img class="width rounded" src="<%=item.img%>" alt="">
-        <div class="product-type product-sm-font m-2 mb-3"><%=item.img%></div>
+        <img src="<%=item.img%>" alt="cake">
+        <div><%=item.name%></div>
+    </div>
+<% end %>
+<h3>Cookies</h3>
+<% @products.cookies.each do |item| %>
+    <div>
+      <div>
+        <img src="<%=item.img%>" alt="cookie">
+        <div><%=item.name%></div>
+    </div>
+<% end %>
+<h3>Cupcakes</h3>
+<% @products.cupcakes.each do |item| %>
+    <div>
+      <div>
+        <img src="<%=item.img%>" alt="cupcake">
+        <div><%=item.name%></div>
     </div>
 <% end %>
