@@ -27,14 +27,6 @@ body {
   top: 65%;
 }
 
-.sidenav a:hover {
-  color: #f1f1f1;
-}
-
-.sm-box a:hover {
-  color: #574A68;
-}
-
 .nav-font a {
   font-family: Comfortaa-Bold;
   letter-spacing: 1.07px;
@@ -68,7 +60,7 @@ body {
   border-left: .5vw solid #E4B0AF;
   position: relative;
   left: 22vw;
-  bottom: 2vh;
+  bottom: 3.5vh;
 }
 
 .sm-box {
@@ -97,14 +89,18 @@ body {
 
 .md-font {
   font-family: Comfortaa-Regular;
-  font-size: 1.2vw;
+  font-size: 2vw;
   color: white;
   letter-spacing: 1px;
-  margin: 5px;
+  margin: 10px;
 }
 
-.icon-color a:hover {
+.md-font:hover, .sidenav a:hover {
   color: black;
+}
+
+.sm-box a:hover {
+  color: #574A68;
 }
 
 /* landing email  sign up  */
@@ -143,16 +139,8 @@ body {
   height: 80%;
 }
 
-.col-lg-4 {
-  display: flex;
-}
-
 .col-lg-4 img {
   margin-right: 10px;
-}
-
-.width {
-  width: 100%;
 }
 
 a {
@@ -232,12 +220,11 @@ a {
   }
   .sub-nav-font {
     position: relative;
-    bottom: 5vh;
-    left: 38vw;
+    bottom: 7vh;
+    left: 40vw;
   }
   .sub-nav-font a {
-    display: inline;
-    margin-left: 0 !important;
+    display: inline !important
   }
   .main {
     width: 100%;
@@ -267,7 +254,7 @@ a {
     display: inline !important;
   }
   .col-sm-6 {
-    width: 50% !important;
+    width: 33% !important
   }
   .product-sm-font {
     font-size: 2vw;
