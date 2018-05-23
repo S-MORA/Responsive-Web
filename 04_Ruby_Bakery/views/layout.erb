@@ -9,13 +9,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.42/js/uikit.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.42/js/uikit-icons.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-
   </head>
-
   <body>
     <div class="sidenav">
-
-      <a href="/"><img src="images/logo.png" alt="logo"></a>
+      <a href="/"><img class="resize" src="images/logo.png" alt="logo"></a>
       <div class="nav-font ml-1">
         <a href="/aboutus">about us</a>
         <a href="/catering">catering</a>
@@ -38,9 +35,9 @@
     <div class="sidenav sub-sidenav">
       <a href='/find-a-bakery'>
         <div class="md-box">
-        <span class="sm-font">Find a Bakery</span>
-        <span class="md-font mt-1">contact  us  here</span>
-      </a>
+          <span class="sm-font">Find a Bakery</span>
+          <span class="md-font mt-1">contact us here</span>
+        </a>
         <div class="arrow-right"></div>
       </div>
       <div class="md-box sm-box">
@@ -56,9 +53,5 @@
     <div class="main">
       <%= yield %>
     </div>
-
-
-
   </body>
-
 </html>

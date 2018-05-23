@@ -36,14 +36,12 @@ end
 
 post ('/mail-list') do
   @products = products
-
   mg_client = Mailgun::Client.new (ENV["MAILGUN_API_KEY"])
   @user_email_input = params[:email]
   message_params =  { from: 'sharonmorato1@gmail.com',
                     to:   @user_email_input,
                     subject: "Welcome to the Friday Bakery",
-                    html:   erb(:mailing_list, layout: false)
-
+                    html:   erb(:outgoing_email, layout: false)
                 }
    mg_client.send_message ENV['MAILGUN_API_DOMAIN'], message_params
    flash[:success] = "Success!"
@@ -55,9 +53,9 @@ post ('/contact-us') do
   @user_email_input = params[:email]
   @user_message_input = params[:message]
   message_params = { from: 'sharonmorato1@gmail.com',
-                  to:   @user_email_input,
-                  subject: "The Friday Bakery Has Received Your Message",
-                  text:    "Thank you for contacting us, we will be with you shortly!
+                     to:   @user_email_input,
+                     subject: "The Friday Bakery Has Received Your Message",
+                     text:    "Thank you for contacting us, we will be with you shortly!
                             Here is your message to us: #{@user_message_input}"
                 }
    mg_client.send_message ENV['MAILGUN_API_DOMAIN'], message_params
