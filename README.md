@@ -1,4 +1,4 @@
-# Projects with ful UI
+# Projects with full User Interface
 ####
 
 ----
@@ -9,7 +9,7 @@ Sinatra as the backend framework
 Bootstrap  
 Designed in Sketch  
 
-##Pokemon API
+## Pokemon API
 
 jQuery
 Displays API information via AJAX call
