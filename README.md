@@ -11,20 +11,21 @@ Mailgun Email API that sends an email with a list of products.
 Bootstrap  
 Designed UI in Sketch   
 
-![alt text]
+![alt text](https://github.com/S-MORA/Web-Projects/blob/master/screenshots/mailgun-gmaps-api.png)
 
 ## Pokemon API
 
 jQuery   
 Displays API information via AJAX call   
 CSS Grid   
-Designed UI in Sketch   
+Designed UI in Sketch     
 
-![alt text]
+![alt text](https://github.com/S-MORA/Web-Projects/blob/master/screenshots/api-ajax2.png)
+![alt text](https://github.com/S-MORA/Web-Projects/blob/master/screenshots/api-ajax.png)
 
 ## Munder Difflin
 
 Pure HTML & CSS - No libraries.    
 Designed UI in Sketch    
 
-![alt text]
+![alt text](https://github.com/S-MORA/Web-Projects/blob/master/screenshots/no-libraries.png)
