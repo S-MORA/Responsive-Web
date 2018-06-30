@@ -2,12 +2,12 @@
 ####
 
 ----
-## Ruby Bakery
+## Ruby Bakery 
 
-Ruby - Used 5 classes to minimize html & css
-Sinatra Back End
-Google Maps API
-Mailgun Email API that sends an email with a list of products.    
+Ruby - Used 5 classes to minimize html & css.  
+Sinatra Back End  
+Google Maps API  
+Mailgun Email API that sends an email with a list of products.      
 Bootstrap  
 Designed UI in Sketch   
 
