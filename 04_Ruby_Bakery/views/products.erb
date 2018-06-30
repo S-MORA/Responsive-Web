@@ -2,7 +2,7 @@
   <img class="header-img" src="<%=@view_manager.header%>">
 </div>
 <div class="container-fluid">
-  <div class="row">
+  <div class="row mx-0">
     <div class="col-lg-12 ">
       <h2 class="product-type m-1 mt-2"><%=@view_manager.type%></h2>
       <p class="product-type product-md-font m-2 mb-3">
@@ -10,7 +10,7 @@
       </p>
     </div>
   </div>
-  <div class="row">
+  <div class="row mx-0">
     <% @view_manager.array.each do |item| %>
       <div class="col-lg-4">
         <div>
